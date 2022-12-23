@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кэшбэк сервис Marketbot. Возвращай деньги за покупки обратно</title>
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="img/svg-img/logo.2d8b804.svg" alt="logo: AI.MARKETING">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 d-none d-md-none d-lg-block">
+                        <div class="header-nav">
+                            <nav>
+                                <ul class="nav-items">
+                                    <li class="link-item"><a href="#">Карьера</a></li>
+                                    <li class="link-item"><a href="#">Компаниям</a></li>
+                                    <li class="link-item"><a href="#">Кэшбэк</a></li>
+                                    <li class="link-item"><a href="#">FAQ</a></li>
+                                </ul>
+                            </nav>
+                            <div class="lang">
+                                <p>
+                                    <span>ru</span>
+                                </p>
+                            </div>
+                            <a href="#">
+                                <button class="btn btn--log">Вход | Регистрация</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="hero-title">
+                                <h1 class="title-first">
+                                    Покупки должны </br>приносить Выгоду!
+                                </h1>
+                                <p>Лучшие кэшбэк предложения как для покупок в интернете, так и в офлайн магазине за углом.</p>
+                                <p>Загрузи чек - получи кэшбэк!</p>
+                            </div>
+                            <button class="btn btn--green">
+                                <a href="#">Вход | Регистрация</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how-work">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="how-wr--content">
+                            <h3 class="heading-title green">Как это работает?</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card-item">
+                            <img src="img/svg-img/choose.64ce3f5.svg" alt="">
+                            <p>Выберите магазин</p>
+                            <span>Откройте кэшбэк каталог и выберите предложение.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card-item">
+                            <img src="img/svg-img/basket.0bfac3e.svg" alt="">
+                            <p>Покупайте с выгодой</p>
+                            <span>Совершите покупку, и сумма кэшбэка отразится в вашем профиле.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="card-item">
+                            <img src="img/svg-img/advantage.1e205e5.svg" alt="">
+                            <p>Используйте выгоду</p>
+                            <span>Через 2-4 недели подтвержденный кэшбэк будет зачислен на баланс вашего аккаунта.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="shops-cashback-home">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="heading-title green">Более 20 000 онлайн магазинов с кэшбэком</h4>
+                        <p class = "description">Мы предлагаем лучший возврат кэшбэка на рынке. Разница в ставке кэшбэка у нас и <br> у других агрегаторов достигает порой 4-х раз.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-11">
+                        <ul>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/rumikom-17271.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    45 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">55%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">10.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">РУМИКОМ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/notta-belle-many-geos-20700.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    38 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">46%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">10.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Notta&Belle Many GEOs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/playtoday-17006.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    39 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">49%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">12.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Playtoday</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/mandm-direct-fr-21751.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    116 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">95%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">7.15%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">MandM Direct FR</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/napishem-18693.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    43 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">91%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">25.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Напишем</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/carvilleshop-21140.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    84 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">99%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">5.83%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">carvilleshop</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/aromacode-19509.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    35 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">61%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">8.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Aromacode</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/ilona-lunden-21366.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    33 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">86%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">5.80%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">ILONA LUNDEN</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/marioberluchi-17799.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    32 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">30%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">12.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Marioberluchi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-11">
+                        <ul>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/myrentacar_com.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    58 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">82%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">6.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Rentalcars</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/smartcasual-ru-20454.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    26 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">57%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">7.50%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Smartcasual.ru</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/black-star-wear-2039.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    22 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">69%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">6.52%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Black Star Wear</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/tele2-14584.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    72 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">50%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">280.31RUB</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Tele2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/docdoc-3248.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    31 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">43%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">400RUB</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Docdoc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/sucuri-ww-17989.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    115 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">88%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">n/a</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Sucuri WW</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/foreo-ru-emea-asia-18393.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    105 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">85%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">11.53%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Foreo RU EMEA ASIA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/otus-21788.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    17 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">98%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">15.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Otus</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/bekker-ru-14736.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    86 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">88%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">293.35RUB</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Беккер RU</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-11">
+                        <ul>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/lamoda-by-13574.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    19 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">55%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">12.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">lamoda by</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/placeit-ww-21168.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    n/a
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">n/a</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">50.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">PlaceIt  WW</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/tehnopark-2564.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    28 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">29%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">4.50%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Технопарк</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/Lenovo.gif" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    63 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">95%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">7.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Lenovo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/lime-19581.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    44 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">45%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">7.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">LIME</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/uaevisa-online-ww-18530.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    88 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">93%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">7.00%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Uaevisa-online WW</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/navabi-de-21971.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    127 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">54%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">6.67%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Navabi DE</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/spikes-14748.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    25 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">68%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">21.70%</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Spikes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cashback-shopping__item">
+                                    <div class="cashback-shopping__item--left">
+                                        <div class="cashback-shopping__item--logo">
+                                            <img src="img/sprinthost-16026.png" alt="">
+                                        </div>
+                                        <div class="cashback-shopping__item--main">
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Время оплаты</p>
+                                                <span class = "simple">
+                                                    52 день(ей)
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik03Ljk5MjUgMC41QzMuODUyNSAwLjUgMC41IDMuODYgMC41IDhDMC41IDEyLjE0IDMuODUyNSAxNS41IDcuOTkyNSAxNS41QzEyLjE0IDE1LjUgMTUuNSAxMi4xNCAxNS41IDhDMTUuNSAzLjg2IDEyLjE0IDAuNSA3Ljk5MjUgMC41Wk04IDE0QzQuNjg1IDE0IDIgMTEuMzE1IDIgOEMyIDQuNjg1IDQuNjg1IDIgOCAyQzExLjMxNSAyIDE0IDQuNjg1IDE0IDhDMTQgMTEuMzE1IDExLjMxNSAxNCA4IDE0Wk04LjM3NSA0LjI1SDcuMjVWOC43NUwxMS4xODc1IDExLjExMjVMMTEuNzUgMTAuMTlMOC4zNzUgOC4xODc1VjQuMjVaIiBmaWxsPSIjOEZCMUMyIi8+Cjwvc3ZnPgo=" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="cashback-shopping__item--text">
+                                                <p class = "gray">Подтверждение:</p>
+                                                <span class = "green">96%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cashback-shopping__item--right">
+                                        <h4 class="cashback-shopping__item--title">Кэшбэк</h4>
+                                        <p class = "green">
+                                            <span>до</span>
+                                        </p>
+                                        <p class = "green">400RUB</p>
+                                        <div class="cashback-shopping__item--right-main">
+                                            <p class="cashback-shopping__item--right__name">Sprinthost</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="shops-cashback-home__btns">
+                    <a href="#" class = "btn btn--green">Онлайн кэшбэк каталог</a>
+                </div>
+            </div>
+        </section>
+        <section class="best-offer--wr">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="heading-title green">Лучшие предложения в магазине за углом</h4>
+                        <p class = "description">Сохрани карту, соверши покупку в одном из партнерских магазинов и загрузи чек на сайт. Твой кэшбэк ждет тебя!</p>
+                        <div class="best-offer--img d-none d-md-block">
+                            <img src="img/svg-img/check-robot.bb585d8.svg" alt="">
+                        </div>
+                        <div class="best-offer--btns">
+                            <a href="#" class = "btn btn--green">Загрузить чек</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="analysis-trends--wr">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6">
+                        <h4 class="heading-title white-title">Анализ трендов МаркетБот</h4>
+                        <p>
+                            <b>Доверьте формирование рекламной стратегии МаркетБоту и получайте доход на арбитраже трафика!</b>
+                        </p>
+                        <p>МаркетБот анализирует тренды в социальных сетях и поисковых запросах и по динамике роста популярности ключевых слов предсказывает будущий спрос.</p>
+                        <div class="analysis-trends--btns">
+                            <a href="#" class = "btn btn--green">Регистрация</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-5">
+                        <div class="analysis-trends--wr-img">
+                            <img src="img/svg-img/analysis.a4d5f85.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recommendation--wr">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 mb-5">
+                        <img src="img/svg-img/analysis.a4d5f85.svg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="recommendation--content">
+                            <h4 class="heading-title green">Рекомендуйте товары друзьям и получайте 5% от их покупок!</h4>
+                            <p>
+                                <b>Реферальная программа</b>
+                            </p>
+                            <p>С ней Вы сможете получать кэшбэк, приглашая друзей или рекомендуя товары.</p>
+                            <div class="recommendation--btns">
+                                <a href="#" class = "btn btn--green">Начать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="overFooter--wr">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-4 col-sm-5 mb-5">
+                        <div class="overFooter--img">
+                            <img src="img/svg-img/protectRobot.6b8bc3c.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="overFooter--text">
+                            <p>MarketBot Cashback Protection</p>
+                            <h4 class="heading-title">Страхует от</h4>
+                            <h4 class="heading-title">Отмены заказа + Ошибки доставки</h4>
+                            <p>Быстро, Легко и Бесплатно</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer--address">
+                        <div class="footer-text">
+                            <p>Operation:</p>
+                            <p>UDMCREATORS LTD, Company number 13194692</p>
+                            <p>Unit 111420, Second Floor, 6 Market Place, London, United Kingdom, W1W 8AF</p>
+                        </div>
+                        <div class="footer-text">
+                            <p>Technology:</p>
+                            <p>Wexford Alliance Limited, Company 2531493</p>
+                            <p>111 Bonham Strand, MW Tower, 7 Floor, Sheung Wan, Hong Kong</p>
+                        </div>
+                        <div class="footer__tm">
+                            <p>Все торговые марки принадлежат правообладателям.</p>
+                            <a href="">
+                                <span>AI.MARKETING</span>
+                                <small>TM</small>
+                                <span>торговая марка  Wexford Alliance Limited</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
